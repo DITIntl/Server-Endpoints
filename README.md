@@ -2,14 +2,15 @@
 
 This repository contains all the endpoint templates that can be loaded in a Thinger.io server instance to execute endpoint calls by devices. A template is basically a definition of a HTTP call where some parameters are modified in runtime by the server, i.e., for setting credentials in headers, modifying URLs, and so on.  
 
-To load the endpoints in a Thinger.io server instance, just access a shell where the MongoDB server instance is running, and where the command `mongoimport` exists. Then, execute the script `import_script.sh` that will load all the JSON templates definitions in the database.
+To load the endpoint templates in a Thinger.io server instance, just access a shell where the MongoDB server instance is running, and where the command `mongoimport` exists. Then, execute the script `import_script.sh` that will load all the JSON templates definitions in the database.
 
-**Note**: The import script just try to import the endpoints in the local `thinger` database. If you are using a custom database name, you may need to modify the script.
+**Note**: The import script just try to import the endpoints in the local `thinger` database. If you are using a custom database name, you may need to modify the script. Sample commands:
 
 
 ```bash
 git clone https://github.com/thinger-io/Server-Endpoints
 cd Server-Endpoints
+chmod +x import_script.sh
 ./import_script.sh
 ```
 
