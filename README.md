@@ -44,11 +44,16 @@ A Thinger.io endpoint template is defined as the following example (for calling 
 }
 ```
 
-The console then processes this template and provides an interface for esasily configuring the endpoint, like the required credentials:
+The console then processes this template and provides an interface for easily configuring the endpoint, like the required credentials:
 
 <p align="center">
 <img src="resources/ifttt_maker_channel.png">
 </p>
 
+After importing the templates, it is possible to see them in the database, as in the following capture. Notice the `endpoints_templates` table:
 
+<p align="center">
+<img src="resources/mongodb.png">
+</p>
 
+Do you have any endpoint template that can be useful for other users? Share it with us!
