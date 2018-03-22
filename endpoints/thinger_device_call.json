@@ -1,0 +1,39 @@
+{
+  "_id" : "thinger_device_call",
+  "name" : "Thinger.io Device Call",
+  "type" : "http_request",
+  "description" : "Call another Thinger.io device resource",
+  "http_request" : {
+    "url" : "https://api.thinger.io/v1/users/{{user}}/devices/{{device}}/{{resource}}",
+    "body_type" : "json",
+    "headers" : [
+      {
+        "key" : "Authorization",
+        "value" : "Bearer {{token}}"
+      }
+    ],
+    "method" : "POST"
+  },
+  "parameters" : [
+    {
+      "id" : "user",
+      "name" : "Device Owner Username",
+      "description" : "Enter the username of the device owner."
+    },
+    {
+      "id" : "device",
+      "name" : "Device Identifier",
+      "description" : "Enter the device identifier."
+    },
+    {
+      "id" : "resource",
+      "name" : "Resource Name",
+      "description" : "Enter the resource defined in the device to call."
+    },
+    {
+      "id" : "token",
+      "name" : "Device Access Token",
+      "description" : "Enter the device access token that grant access to the device resource."
+    }
+  ]
+}

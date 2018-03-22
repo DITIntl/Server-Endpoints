@@ -1,0 +1,29 @@
+{
+    "_id" : "keen_io_event",
+    "name" : "Keen IO Analytics",
+    "type" : "http_request",
+    "description" : "....",
+    "http_request" : {
+        "url" : "https://api.keen.io/3.0/projects/{{project_id}}/events/{{event_collection}}?api_key={{write_key}}",
+        "body_type" : "json",
+        "headers" : [],
+        "method" : "POST"
+    },
+    "parameters" : [
+        {
+            "id" : "project_id",
+            "name" : "Project ID",
+            "description" : "This is the Project ID automatically generated for your project, something like \"543cb655967a3d6778aa1cff\"."
+        },
+        {
+            "id" : "event_collection",
+            "name" : "Event Collection",
+            "description" : "Specify an event name that represents the data your are logging, like \"temperature\" or \"location\"."
+        },
+        {
+            "id" : "write_key",
+            "name" : "Write Key",
+            "description" : "This is the Write Key for your project. You can check it from the project page in the Show API Keys button."
+        }
+    ]
+}

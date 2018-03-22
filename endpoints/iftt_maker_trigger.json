@@ -1,0 +1,24 @@
+{
+  "_id" : "ifttt_maker_trigger",
+  "name" : "IFTTT Maker Channel Trigger",
+  "type" : "http_request",
+  "description" : "....",
+  "http_request" : {
+    "url" : "https://maker.ifttt.com/trigger/{{event}}/with/key/{{key}}",
+    "body_type" : "json",
+    "headers" : [],
+    "method" : "POST"
+  },
+  "parameters" : [
+    {
+      "id" : "event",
+      "name" : "Maker event name",
+      "description" : "The name of the event you have entered in the IFTTT Maker Channel while configuring the trigger channel, like \"button_pressed\" or \"front_door_opened\"."
+    },
+    {
+      "id" : "key",
+      "name" : "Maker channel secret key",
+      "description" : "Your IFTTT Maker Channel secret key that will allow call your defined Maker events."
+    }
+  ]
+}

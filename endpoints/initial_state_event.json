@@ -1,0 +1,33 @@
+{
+  "_id" : "initial_state_event",
+  "name" : "Initial State Event",
+  "type" : "http_request",
+  "description" : "....",
+  "http_request" : {
+    "url" : "https://groker.initialstate.com/api/events",
+    "body_type" : "json",
+    "headers" : [
+      {
+        "key" : "X-IS-AccessKey",
+        "value" : "{{X-IS-AccessKey}}"
+      },
+      {
+        "key" : "X-IS-BucketKey",
+        "value" : "{{X-IS-BucketKey}}"
+      }
+    ],
+    "method" : "POST"
+  },
+  "parameters" : [
+    {
+      "id" : "X-IS-AccessKey",
+      "name" : "Access Key",
+      "description" : "This is your access key that should be available in your account information."
+    },
+    {
+      "id" : "X-IS-BucketKey",
+      "name" : "Bucket Key",
+      "description" : "This is the bucket key where you want to push your events. This bucket must be already created!"
+    }
+  ]
+}
