@@ -1,0 +1,18 @@
+[  
+   {  
+      "id":"ifttt_maker_trigger",
+      "name":"IFTTT Webhook Trigger"
+   },
+   {  
+      "id":"keen_io_event",
+      "name":"Keen IO Analytics"
+   },
+   {  
+      "id":"initial_state_event",
+      "name":"Initial State Event"
+   },
+   {  
+      "id":"thinger_device_call",
+      "name":"Thinger.io Device Call"
+   }
+]
