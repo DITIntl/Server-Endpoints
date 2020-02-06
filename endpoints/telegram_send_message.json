@@ -1,0 +1,29 @@
+{
+  "_id" : "telegram_send_message",
+  "name" : "Telegram message",
+  "type" : "http_request",
+  "description" : "....",
+  "http_request" : {
+    "url" : "https://api.telegram.org/bot{{token}}/sendMessage?chat_id={{chat}}&text={{message}}",
+    "body_type" : "",
+    "headers" : [],
+    "method" : "POST"
+  },
+  "parameters" : [
+    {
+      "id" : "token",
+      "name" : "Bot Token",
+      "description" : "The telegram bot token. It can be left empty and be filled when calling the endpoint with key 'token'."
+    },
+    {
+      "id" : "chat",
+      "name" : "Chat Identifier",
+      "description" : "Chat Identifier. It can be left empty and be filled when calling the endpoint with key 'chat'."
+    },
+    {
+      "id" : "message",
+      "name" : "Chat Message",
+      "description" : "Chat Message. It can be left empty and be filled when calling the endpoint with key 'message'."
+    }
+  ]
+}
